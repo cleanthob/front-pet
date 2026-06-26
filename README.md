@@ -78,6 +78,7 @@ Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
+npx json-server --watch db.json --port 3000
 ```
 
 A aplicação estará disponível em:
