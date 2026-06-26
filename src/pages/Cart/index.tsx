@@ -1,11 +1,17 @@
 import { useContext } from "react";
+import toast from "react-hot-toast";
 import { FaTrash } from "react-icons/fa";
 import { IoIosAddCircle, IoIosRemoveCircle } from "react-icons/io";
 import { CartContext } from "../../contexts/CartContext";
+import { IoBagCheckOutline } from "react-icons/io5";
 
 export function Cart() {
   const { cartItems, addToCart, removeFromCart, clearCart, getCartTotal } =
     useContext(CartContext);
+
+  function checkout() {
+    toast.success("Compra feita com sucesso.");
+  }
 
   return (
     <div className="mx-auto max-w-5xl p-6">
@@ -96,6 +102,14 @@ export function Cart() {
                 Limpar carrinho
               </button>
             </div>
+
+            <button
+              onClick={checkout}
+              className="flex items-center justify-center gap-2 rounded-lg bg-green-600 px-6 py-3 font-semibold text-white shadow-md transition hover:bg-green-700 hover:shadow-lg active:scale-95"
+            >
+              <IoBagCheckOutline size={20} />
+              Finalizar compra
+            </button>
           </div>
         </>
       )}
