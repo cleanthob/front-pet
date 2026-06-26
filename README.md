@@ -127,4 +127,4 @@ Este projeto foi desenvolvido para fins de estudo e composição de portfólio.
 **Cleantho Beltrão**
 
 - GitHub: https://github.com/cleanthob
-- LinkedIn: https://www.linkedin.com/in/cleanthob/
+- LinkedIn: https://www.linkedin.com/in/cleantho-beltrao/
